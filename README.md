@@ -14,17 +14,16 @@ O projeto encontra-se dividido em duas partes, sendo uma para o back-end e outra
 
 ## Back-end
 
-Primeiramente precisaremos ter o `docker-compose` instalado no servidor/computador.
+No arquivo `.env_example` adicionamos as informações necessárias como solicitado no arquivo e após renomeie o
+arquivo para
+`.env`.
+
+Precisamos ter o `docker-compose` instalado no servidor/computador.
 
 Após conseguiremos rodar o comando: `docker pull postgres` para baixar a imagem do banco de dados, onde será
 armazenado as previsões do tempo.
 
 Execute o comando `docker-compose up -d` para subir o container com o banco de dados, nesse caso utizamos `Postgres`.
-
-No arquivo `.env_example` adicionamos as informações necessárias como solicitado no arquivo e após renomeie o
-arquivo para
-`.env`.
-
 
 Acesse a pasta `back-end-trf` abra o terminal e rode o comando `npm run startApp`.
 Após rodar esse comando o back-end da aplicação estará online e no terminar exibira a seguinte
